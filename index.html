@@ -3,14 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Casa Nativa | Refugio rural en Pereira</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
     <script>
         const { animate } = anime;
     </script>
 </head>
 <body>
+    <header>
+        <div>
+            <a href="#">CASA NATIVA</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Experiencia</a>
+                </li>
+                <li>
+                    <a href="">Servicios</a>
+                </li>
+                <li>
+                    <a href="">Reserva</a>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <div>
+                    <span>Escápate de la rutina</span>
+                    <h1>Respira naturaleza. Descansa como en casa.</h1>
+                    <p>Casa Nativa es un refugio rural pensado para desconectarte del ruido, disfrutar el paisaje y vivir una experiencia tranquila a pocos minutos de la ciudad.</p>
+                    <div>
+                        <a href="#reserva">Consultar disponibilidad</a>
+                        <a href="#experiencia">Conoce la experiencia</a>
+                    </div>
+                </div>
+                <div id="expereriencia">
+                    <svg class="cn-scene" viewBox="0 0 520 400" role="img" aria-label="Casa rural entre montañas al atardecer">
+                        <rect width="520" height="400" fill="#F1E3C4"/>
+                        <circle class="cn-sun" cx="360" cy="120" r="46" fill="#D9A441"/>
+                        <path d="M0 260 L120 130 L230 240 L330 150 L520 290 L520 400 L0 400Z" fill="#6E9A86"/>
+                        <path d="M0 310 L150 210 L280 300 L420 220 L520 290 L520 400 L0 400Z" fill="#3E6B58"/>
+                        <path d="M0 350 Q140 310 260 345 T520 335 L520 400 L0 400Z" fill="#1F3D2B"/>
+                        <g transform="translate(190 262)">
+                        <rect x="0" y="30" width="110" height="60" fill="#F7EFDD"/>
+                        <path d="M-12 32 L55 -20 L122 32Z" fill="#B5652F"/>
+                        <rect x="44" y="52" width="24" height="38" fill="#1F3D2B"/>
+                        <rect x="12" y="46" width="20" height="18" fill="#D9A441"/>
+                        <rect x="80" y="46" width="20" height="18" fill="#D9A441"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>                        
+        </section>
+
+        <section id="servicios">
+            <div class="container">
+                <h2>Todo lo necesario para una estadia especial</h2>
+                <p>Diseñamos cada detalle para que disfrutes una experiencia cómoda, tranquila y cercana a la naturaleza</p>
+            </div>
+            <div>
+                <div class="col">
+                    <article>
+                        <div>
+                            <div>🛏️</div>
+                            <h3>Habitación privada</h3>
+                            <p>Espacos cómodos, iluminados y preparados para descansar.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div>
+                <div id="col">
+                    <article>
+                        <div>
+                            <div>☕</div>
+                            <h3>Desayuno local.</h3>
+                            <p>Comienza el día con sabores frescos y productos de la región.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div>
+                <div id="col">
+                    <article>
+                        <div>
+                            <div>🥾</div>
+                            <h3>Experiencias</h3>
+                            <p>Recomendaciones de ruta, miradores ya ctividades cercanas.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservas">
+            <div class="container">
+                <div>
+                    <div>
+                        <h2>Planea tu próxima escapada</h2>
+                        <p>Cuéntanos cuándo quieres visitarnos y nos pondremos en contacto contigo para confirmar disponibilidad</p>
+                        
+                        <form action="formReserva">
+                            <div id="row g-3">
+                                <div class="col-12">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input type="text" class="form-control" id="Nombre" required>
+                                    <div>Escribe tu nombre completo</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="correo" class="form-label">Correo electronico</label>
+                                    <input type="email" class="form-control" id="correo" required>
+                                    <div>Escribe un correo válido</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" required>
+                                    <div>Escribe tu teléfono</div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="llegada" class="form-label">Fecha de llegada</label>
+                                    <input type="date" class="form-control" id="llegada" required>
+                                    <div>Elige la fecha de llegada</div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="salida" class="form-label"> Fecha de salida</label>
+                                    <input type="date" class="form-control" id="salida" required>
+                                    <div>Elige una fecha posterior a la llegada</div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="salida" class="form-label">Número de huespedes</label>
+                                    <input type="number" class="form-control" id="huespedes" min="1" max="10" required>
+                                    <div>Indica entre 1 y 10 huéspedes</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button>Enviar solicitud</button>
+                                </div>
+
+                                <div class="col-12">
+                                    <div id="respuesta" class="alert alert-success d-none mb-0" role="status">
+                                        ¡Gracias! Recibimos tu solicitud y te escribiremos pronto. 
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <p>Casa nativa</p>
+                    <p>Un lugar para descansar, respirar y volver a lo esencial.</p>
+                </div>
+                <div>
+                    <p>Enlaces</p>
+                    <ul>
+                        <li>
+                            <a href="inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="servicios">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="reserva">Reserva</a>
+                        </li>
+                        <li>
+                            <a href="contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Contacto</p>
+                    <ul>
+                        <li>+57 300 555 0180</li>
+                        <li>reservas@casanativa.demo</li>
+                        <li>Pereira, Risaralda</li>
+                    </ul>
+                </div>
+                <hr class="my-4">
+                <p>© 2026 Casa Nativa. Proyecto académico.</p>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
