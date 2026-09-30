@@ -1,0 +1,14 @@
+:root {
+    --cn-dark: #0A3323;   
+    --cn-moss: #839958;   
+    --cn-beige: #F7F4D5;  
+    --cn-rose: #D3968C;   
+    --cn-teal: #105666;
+
+    --bs-body-font-family: "Viga", sans-serif;
+    --bs-text-font-family: "Rubik", sans-serif;
+    --bs-body-color: var(--cn-dark);
+    --bs-body-bg: var(--cn-beige);
+    --bs-border-radius: .75rem;
+}
+
