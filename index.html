@@ -16,44 +16,41 @@
     </script>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="#">CASA NATIVA</a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#inicio">Inicio</a>
-                </li>
-                <li>
-                    <a href="#experiencia">Experiencia</a>
-                </li>
-                <li>
-                    <a href="#servicios">Servicios</a>
-                </li>
-                <li>
-                    <a href="#reserva">Reserva</a>
-                </li>
-                <li>
-                    <a href="#contacto">Contacto</a>
-                </li>
-            </ul>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg cn-navbar" aria-label="Navegación principal">
+            <div class="container">
+            <a class="navbar-brand cn-logo" href="#inicio">Casa Nativa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-lg-auto mb-3 mb-lg-0">
+                <li class="nav-item"><a class="nav-link cn-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link cn-link" href="#experiencia">Experiencia</      a></li>
+                <li class="nav-item"><a class="nav-link cn-link" href="#servicios">Servicios</a></      li>
+                <li class="nav-item"><a class="nav-link cn-link" href="#reserva">Reserva</a></li>
+                <li class="nav-item"><a class="nav-link cn-link" href="#contacto">Contacto</a></    li>
+                </ul>
+                <a href="#reserva" class="btn btn-accent cn-cta">Reservar ahora</a>
+            </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <div>
-                <div>
-                    <span>Escápate de la rutina</span>
-                    <h1>Respira naturaleza. Descansa como en casa.</h1>
-                    <p>Casa Nativa es un refugio rural pensado para desconectarte del ruido, disfrutar el paisaje y vivir una experiencia tranquila a pocos minutos de la ciudad.</p>
-                    <div>
-                        <a href="#reserva">Consultar disponibilidad</a>
-                        <a href="#experiencia">Conoce la experiencia</a>
+        <section id="inicio" class="cn-hero">
+            <div class="container">
+                <div class="col-lg-6">
+                    <span class="badge cn-badge mb-3">Escápate de la rutina</span>
+                    <h1 class="display-4 cn-tittle">Respira naturaleza. Descansa como en casa.</h1>
+                    <p class="lead mt-3 mb-4">Casa Nativa es un refugio rural pensado para desconectarte del ruido, disfrutar el paisaje y vivir una experiencia tranquila a pocos minutos de la ciudad.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#reserva" class="btn btn-accent btn-lg">Consultar disponibilidad</a>
+                        <a href="#experiencia" class="btn btn-outline-light btn-lg">Conoce la experiencia</a>
                     </div>
                 </div>
-                <div id="expereriencia">
+                <div id="expereriencia" class="col-lg-6">
                     <svg class="cn-scene" viewBox="0 0 520 400" role="img" aria-label="Casa rural entre montañas al atardecer">
                         <rect width="520" height="400" fill="#F1E3C4"/>
                         <circle class="cn-sun" cx="360" cy="120" r="46" fill="#D9A441"/>
@@ -72,40 +69,49 @@
             </div>                        
         </section>
 
-        <section id="servicios">
-            <div class="container">
-                <h2>Todo lo necesario para una estadia especial</h2>
-                <p>Diseñamos cada detalle para que disfrutes una experiencia cómoda, tranquila y cercana a la naturaleza</p>
+        <section id="servicios" class="py-6">
+            <div class="container" class="text-center mx-auto mb-5" style="max-width: 640px">
+                <h2 class="cn-title">Todo lo necesario para una estadia especial</h2>
+                <p class="text-muted">Diseñamos cada detalle para que disfrutes una experiencia cómoda, tranquila y cercana a la naturaleza</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+                <div class="col">
+                    <article class="card h-100 cn-services">
+                        <div class="card-body">
+                            <div class="cn-icon" aria-hidden="true">🛏️</div>
+                            <h3 class="h5 card-title">Habitación privada</h3>
+                            <p class="card-text">Espacos cómodos, iluminados y preparados para descansar.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
             <div>
                 <div class="col">
-                    <article>
+                    <article class="card h-100 cn-services">
                         <div>
-                            <div>🛏️</div>
-                            <h3>Habitación privada</h3>
-                            <p>Espacos cómodos, iluminados y preparados para descansar.</p>
+                            <div class="cn-icon" aria-hidden="true">☕</div>
+                            <h3 class="h5 card-title">Desayuno local.</h3>
+                            <p class="card-text">Comienza el día con sabores frescos y productos de la región.</p>
                         </div>
                     </article>
                 </div>
             </div>
-            <div>
-                <div id="col">
-                    <article>
-                        <div>
-                            <div>☕</div>
-                            <h3>Desayuno local.</h3>
-                            <p>Comienza el día con sabores frescos y productos de la región.</p>
-                        </div>
-                    </article>
-                </div>
+            <div class="col">
+                <article class="card h-100 cn-service">
+                    <div class="card-body">
+                    <div class="cn-icon" aria-hidden="true">🌿</div>
+                    <h3 class="h5 card-title">Zona de descanso</h3>
+                    <p class="card-text">Jardines y espacios tranquilos para leer, conversar o simplemente desconectarte.</p>
+                    </div>
+                </article>
             </div>
             <div>
                 <div id="col">
-                    <article>
-                        <div>
-                            <div>🥾</div>
-                            <h3>Experiencias</h3>
-                            <p>Recomendaciones de ruta, miradores ya ctividades cercanas.</p>
+                    <article class="card h-100 cn-service">
+                        <div class="card-body">
+                            <div class="cn-icon" aria-hidden="true">🥾</div>
+                            <h3 class="h5 card-title">Experiencias</h3>
+                            <p class="card-text">Recomendaciones de ruta, miradores ya ctividades cercanas.</p>
                         </div>
                     </article>
                 </div>
