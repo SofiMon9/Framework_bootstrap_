@@ -85,16 +85,14 @@
                     </article>
                 </div>
             </div>
-            <div>
-                <div class="col">
-                    <article class="card h-100 cn-services">
-                        <div>
-                            <div class="cn-icon" aria-hidden="true">☕</div>
-                            <h3 class="h5 card-title">Desayuno local.</h3>
-                            <p class="card-text">Comienza el día con sabores frescos y productos de la región.</p>
-                        </div>
-                    </article>
-                </div>
+            <div class="col">
+                <article class="card h-100 cn-service">
+                    <div class="card-body">
+                        <div class="cn-icon" aria-hidden="true">☕</div>
+                        <h3 class="h5 card-title">Desayuno local</h3>
+                        <p class="card-text">Comienza el día con sabores frescos y productos de la región.</p>
+                    </div>
+                </article>
             </div>
             <div class="col">
                 <article class="card h-100 cn-service">
@@ -118,53 +116,58 @@
             </div>
         </section>
 
-        <section id="reservas">
+        <section id="reservas" class="py-6 cn-reservas">
             <div class="container">
-                <div>
-                    <div>
-                        <h2>Planea tu próxima escapada</h2>
-                        <p>Cuéntanos cuándo quieres visitarnos y nos pondremos en contacto contigo para confirmar disponibilidad</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="cn-title text-center">Planea tu próxima escapada</h2>
+                        <p class="text-center mb-4">Cuéntanos cuándo quieres visitarnos y nos pondremos en contacto contigo para confirmar disponibilidad</p>
                         
-                        <form action="formReserva">
-                            <div id="row g-3">
+                        <form id="formReserva" class="card cn-form p-4 p-md-5 needs-validation" >
+                            <div class="row g-3">
                                 <div class="col-12">
-                                    <label for="nombre">Nombre completo</label>
+                                    <label for="nombre" class="form-label">Nombre completo</label>
                                     <input type="text" class="form-control" id="Nombre" required>
-                                    <div>Escribe tu nombre completo</div>
+                                    <div class="invalid-feedback">Escribe tu nombre completo</div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <label for="correo" class="form-label">Correo electronico</label>
                                     <input type="email" class="form-control" id="correo" required>
-                                    <div>Escribe un correo válido</div>
+                                    <div class="invalid-feedback">Escribe un correo válido</div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <label for="telefono" class="form-label">Teléfono</label>
                                     <input type="tel" class="form-control" id="telefono" required>
-                                    <div>Escribe tu teléfono</div>
+                                    <div class="invalid-feedback">Escribe tu teléfono</div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <label for="llegada" class="form-label">Fecha de llegada</label>
                                     <input type="date" class="form-control" id="llegada" required>
-                                    <div>Elige la fecha de llegada</div>
+                                    <div class="invalid-feedback">Elige la fecha de llegada</div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <label for="salida" class="form-label"> Fecha de salida</label>
                                     <input type="date" class="form-control" id="salida" required>
-                                    <div>Elige una fecha posterior a la llegada</div>
+                                    <div class="invalid-feedback">Elige una fecha posterior a la llegada</div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <label for="salida" class="form-label">Número de huespedes</label>
                                     <input type="number" class="form-control" id="huespedes" min="1" max="10" required>
-                                    <div>Indica entre 1 y 10 huéspedes</div>
+                                    <div class="invalid-feedback">Indica entre 1 y 10 huéspedes</div>
                                 </div>
 
                                 <div class="col-12">
-                                    <button>Enviar solicitud</button>
+                                    <label for="mensaje" class="form-label">Mensaje o solicitud especial</label>
+                                    <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-accent btn-lg w-100">Enviar solicitud</button>
                                 </div>
 
                                 <div class="col-12">
@@ -180,16 +183,16 @@
         </section>
     </main>
 
-    <footer id="contacto">
-        <div>
-            <div>
-                <div>
-                    <p>Casa nativa</p>
+    <footer id="contacto" class="cn-footer pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="cold-md-5">
+                    <p class="cn-logo h4 mb-2">Casa nativa</p>
                     <p>Un lugar para descansar, respirar y volver a lo esencial.</p>
                 </div>
-                <div>
-                    <p>Enlaces</p>
-                    <ul>
+                <div class="col-6 col-md-3">
+                    <p class="fw-semibold mb-2">Enlaces</p>
+                    <ul class="list-unstyled mb-0">
                         <li>
                             <a href="inicio">Inicio</a>
                         </li>
@@ -204,16 +207,16 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <p>Contacto</p>
-                    <ul>
+                <div class="col-6 col-md-4">
+                    <p class="fw-semibold mb-2">Contacto</p>
+                    <ul class="list-unstyled mb-0">
                         <li>+57 300 555 0180</li>
                         <li>reservas@casanativa.demo</li>
                         <li>Pereira, Risaralda</li>
                     </ul>
                 </div>
                 <hr class="my-4">
-                <p>© 2026 Casa Nativa. Proyecto académico.</p>
+                <p class="text-center small mb-0">© 2026 Casa Nativa. Proyecto académico.</p>
             </div>
         </div>
     </footer>
